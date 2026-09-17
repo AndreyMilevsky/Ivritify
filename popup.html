@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'monoscript', 'Segoe UI', sans-serif;
+      width: 220px;
+      padding: 16px;
+      background: #0f0f0f;
+      color: #e8e8e8;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+
+    .title {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      color: #fff;
+    }
+
+    .hebrew-badge {
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    .toggle-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+      padding: 10px 12px;
+      background: #1a1a1a;
+      border-radius: 8px;
+    }
+
+    .toggle-label {
+      font-size: 12px;
+      color: #aaa;
+    }
+
+    .toggle {
+      position: relative;
+      width: 36px;
+      height: 20px;
+    }
+
+    .toggle input { opacity: 0; width: 0; height: 0; }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      inset: 0;
+      background: #333;
+      border-radius: 20px;
+      transition: 0.2s;
+    }
+
+    .slider:before {
+      content: '';
+      position: absolute;
+      height: 14px;
+      width: 14px;
+      left: 3px;
+      bottom: 3px;
+      background: #fff;
+      border-radius: 50%;
+      transition: 0.2s;
+    }
+
+    input:checked + .slider { background: #4a9eff; }
+    input:checked + .slider:before { transform: translateX(16px); }
+
+    .freq-section {
+      background: #1a1a1a;
+      border-radius: 8px;
+      padding: 12px;
+    }
+
+    .freq-label {
+      font-size: 11px;
+      color: #888;
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .freq-value {
+      font-size: 13px;
+      font-weight: 600;
+      color: #4a9eff;
+    }
+
+    input[type="range"] {
+      width: 100%;
+      accent-color: #4a9eff;
+      cursor: pointer;
+    }
+
+    .freq-hints {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 4px;
+      font-size: 10px;
+      color: #555;
+    }
+
+    .reload-note {
+      margin-top: 12px;
+      font-size: 10px;
+      color: #555;
+      text-align: center;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <span class="title">Ivritify</span>
+    <span class="hebrew-badge">Aא</span>
+  </div>
+
+  <div class="toggle-row">
+    <span class="toggle-label">Active</span>
+    <label class="toggle">
+      <input type="checkbox" id="enabledToggle" checked>
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="freq-section">
+    <div class="freq-label">
+      <span>Frequency</span>
+      <span class="freq-value">every <span id="freqDisplay">7</span>th word</span>
+    </div>
+    <input type="range" id="freqSlider" min="3" max="20" value="7">
+    <div class="freq-hints">
+      <span>intense</span>
+      <span>subtle</span>
+    </div>
+  </div>
+
+  <div class="reload-note">Changes apply on next page load</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
