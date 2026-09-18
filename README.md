@@ -6,7 +6,7 @@
 ## Overview
 Ivritify is a browser extension that helps you learn the Hebrew alphabet passively as you browse. It replaces the first letter of every Nth word on a page with its Hebrew equivalent — so instead of grinding flashcards, you pick up the alphabet naturally while reading whatever you'd normally read.
 
-Replacement frequency is configurable (every 3rd, 10th, 20th word, up to a max of every 20th), so you can dial exposure up or down as you get more comfortable with the letters.
+Replacement frequency is configurable, so you can dial exposure up or down as you get more comfortable with the letters.
 
 ## Getting Started
 Ivritify isn't published to the Chrome Web Store yet, so you'd be installing it manually.
