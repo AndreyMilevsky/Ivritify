@@ -12,7 +12,7 @@ Replacement frequency is configurable, so you can dial exposure up or down as yo
 Ivritify isn't published to the Chrome Web Store yet, so you'd be installing it manually.
 
 Click the green Code button on this repo → Download ZIP, then unzip it.
-Open your browser's extensions page
-for Google Chrome its: chrome://extensions
-Toggle Developer Mode on (its in the top-right corner)
-Click Load unpacked and select the unzipped ivritify folder.
+<br>Open your browser's extensions page
+<br>for Google Chrome its: chrome://extensions
+<br>Toggle Developer Mode on (its in the top-right corner)
+<br>Click Load unpacked and select the unzipped ivritify folder.
