@@ -1,6 +1,6 @@
 # <p align="center">Ivritify</p>
 <p align="center">
-  <img width="100" height="273" alt="ivritify" src="https://github.com/user-attachments/assets/481f1832-e9ee-40e3-94ab-ef725c85f5af" />  
+  <img width="500" height="273" alt="ivritify" src="https://github.com/user-attachments/assets/481f1832-e9ee-40e3-94ab-ef725c85f5af" />  
 </p>
 
 ## Overview
