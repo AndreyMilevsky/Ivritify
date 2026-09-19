@@ -1,4 +1,4 @@
-# Ivritify
+<p align="center"> # Ivritify </p>
 <p align="center">
   <img width="600" height="373" alt="ivritify" src="https://github.com/user-attachments/assets/481f1832-e9ee-40e3-94ab-ef725c85f5af" />  
 </p>
